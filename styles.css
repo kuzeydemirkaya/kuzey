@@ -36,5 +36,5 @@ font-family: Heiti TC;
     width: 100%;
     height: 100%;
     cursor: default; 
-    pointer-events: none; 
+    pointer-events: inherit; 
 }
