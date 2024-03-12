@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-    margin-right: 40vh;
+    margin-right: 20px;
 }
 
 
@@ -22,7 +22,7 @@ font-family: Heiti TC;
 }
 
 .content {
-    padding: 20px;
+    padding: 40vh;
 }
 
 .iframe-container {
@@ -42,7 +42,7 @@ font-family: Heiti TC;
 .footer {
     position: fixed;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 25px;
     font-family: Heiti SC;
     font-size: small;
 }
