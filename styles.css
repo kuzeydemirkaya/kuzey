@@ -27,7 +27,7 @@ body {
 }
 
 .content {
-    padding: 40vh;
+    padding-bottom: 80vh;
 }
 
 .iframe-container {
@@ -76,7 +76,7 @@ body {
     }
 
     .content {
-        padding: 350px;
+        padding-bottom: 40vh;
         max-width: 100%; 
         box-sizing: border-box; 
     }
