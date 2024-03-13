@@ -58,10 +58,10 @@ body {
     }
 
     .logo img {
-        margin: 7px;
+        margin: 0px;
         margin-right: 10px;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     .title h1 {
@@ -71,7 +71,7 @@ body {
     }
 
     .content {
-        padding-bottom: 80vh;
+        padding-bottom: 70vh;
         max-width: 100%; 
         box-sizing: border-box; 
     }
