@@ -13,6 +13,7 @@ body {
 
 .header {
     padding: 20px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     font-size: medium;
