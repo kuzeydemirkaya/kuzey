@@ -1,3 +1,3 @@
 # kuzey
-ddddd
+
 🥱😼😼😼😼😼
