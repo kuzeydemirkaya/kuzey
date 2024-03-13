@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .header {
@@ -9,8 +10,49 @@ body {
     align-items: center;
 }
 
-.logo {
+.toggle-container {
     margin-right: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #666;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+    transform: translateX(20px);
+}
+
+.logo img {
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
 }
 
 
@@ -44,5 +86,23 @@ font-family: Heiti TC;
     padding-right: 25px;
     font-family: Heiti SC;
     font-size: small;
+}
+
+.dark-mode .header {
+    background-color: #000;
+    color: #888;
+}
+
+.dark-mode .toggle-label {
+    background-color: #888;
+}
+
+.dark-mode .toggle-checkbox:checked + .toggle-label {
+    background-color: #444;
+}
+
+.dark-mode .footer {
+    background-color: #000;
+    color: #888;
 }
 
