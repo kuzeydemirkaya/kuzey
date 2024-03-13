@@ -66,6 +66,7 @@ body {
     .header {
         flex-direction: row;
         align-items: left;
+        margin-left: 0px;
     }
 
     .logo img {
