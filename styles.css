@@ -52,6 +52,17 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.5s, color 0.5s;
+        color: #333333;
+        background-color: white;
+    }
+    .dark-mode {
+        background-color: #0F0F0F; 
+        color: #8a8a8a; 
+    }
     .header {
         flex-direction: row;
         align-items: left;
