@@ -59,15 +59,15 @@ body {
     }
 
     .logo img {
-        margin: 10px;
-        margin-right: 15px;
-        width: 40px;
-        height: 40px;
+        margin: 7px;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
     }
 
     .title {
         flex: 1; 
-        text-align: right; 
+        text-align: left; 
     }
 
     .title h1 {
@@ -76,14 +76,14 @@ body {
     }
 
     .content {
-        padding: 20px;
+        padding: 40vh;
         max-width: 100%; 
         box-sizing: border-box; 
     }
 
     .footer {
         padding: 10px;
-        text-align: center;
+        text-align: right;
     }
 }
 
