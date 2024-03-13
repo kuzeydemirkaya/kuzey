@@ -2,65 +2,27 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s, color 0.5s;
+    color: #333333;
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: #0F0F0F; 
+    color: #8a8a8a; 
 }
 
 .header {
     padding: 20px;
     display: flex;
     align-items: center;
-}
-
-.toggle-container {
-    margin-right: 20px;
-}
-
-.toggle-checkbox {
-    display: none;
-}
-
-.toggle-label {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    background-color: #ccc;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.toggle-label:before {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    transition: transform 0.3s;
-}
-
-.toggle-checkbox:checked + .toggle-label {
-    background-color: #666;
-}
-
-.toggle-checkbox:checked + .toggle-label:before {
-    transform: translateX(20px);
+    font-size: medium;
+    font-family: Heiti TC;
 }
 
 .logo img {
     margin-right: 20px;
     width: 64px;
     height: 64px;
-}
-
-
-.title h1 {
-margin: 0;
-color: black;
-font-size: medium;
-font-family: Heiti TC;
 }
 
 .content {
@@ -87,22 +49,3 @@ font-family: Heiti TC;
     font-family: Heiti SC;
     font-size: small;
 }
-
-.dark-mode .header {
-    background-color: #000;
-    color: #888;
-}
-
-.dark-mode .toggle-label {
-    background-color: #888;
-}
-
-.dark-mode .toggle-checkbox:checked + .toggle-label {
-    background-color: #444;
-}
-
-.dark-mode .footer {
-    background-color: #000;
-    color: #888;
-}
-
