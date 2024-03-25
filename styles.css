@@ -44,16 +44,6 @@ body {
     pointer-events: inherit; 
 }
 
-.audio-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.audio-wrapper h2 {
-    padding: 20px;
-    font-size: medium;
-    font-family: Heiti TC;
-}
 
 .footer {
     text-align: right;
