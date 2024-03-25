@@ -44,6 +44,11 @@ body {
     pointer-events: inherit; 
 }
 
+.audio-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .footer {
     text-align: right;
     padding-right: 35px;
@@ -86,6 +91,11 @@ body {
         padding-bottom: 68vh;
         max-width: 100%; 
         box-sizing: border-box; 
+    }
+
+    .audio-wrapper {
+        display: flex;
+        align-items: center;
     }
 
     .footer {
