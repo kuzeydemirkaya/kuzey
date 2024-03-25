@@ -44,6 +44,10 @@ body {
     pointer-events: inherit; 
 }
 
+.audio-wrapper {
+    display: flex;
+    align-items: center;
+}
 
 .footer {
     text-align: right;
