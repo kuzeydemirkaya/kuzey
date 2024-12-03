@@ -125,6 +125,23 @@ body {
 }
 
 
+.album {
+    display: inline-block;
+    text-align: center; /* Centers the title below the image */
+    margin: 0 10px; /* Adds spacing between album items */
+}
+
+.album-title {
+    margin-top: 10px; /* Adds space between the image and the title */
+    font-size: 14px; /* Adjust font size for readability */
+    color: #333; /* Default text color */
+}
+
+.dark-mode .album-title {
+    color: #8a8a8a; /* Adjust text color for dark mode */
+}
+
+
 @media only screen and (max-width: 600px) {
     body {
         margin: 0;
