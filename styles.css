@@ -73,13 +73,13 @@ body {
     white-space: nowrap;
     margin: 20px 0;
     padding: 10px 0;
-    background-color: white;
 }
 
 .album-container {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 50px;
 }
 
 .album-container a {
@@ -88,12 +88,12 @@ body {
 
 .album-container img {
     height: 150px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+    border-radius: 0px;
+    transition: transform 0.1s;
 }
 
 .album-container img:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .album-scroll::after {
@@ -103,42 +103,35 @@ body {
     right: 0;
     width: 50px;
     height: 100%;
-    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
-    pointer-events: none; /* Makes sure the fade doesn't block scroll interaction */
 }
 
-.dark-mode .album-scroll::after {
-    background: linear-gradient(to left, #0F0F0F, rgba(15, 15, 15, 0));
-}
-
-.dark-mode .album-container img {
-    border-color: #333;
-}
 
 .album-scroll::-webkit-scrollbar {
-    display: none; /* Hides scrollbar on Webkit browsers */
+    display: none; 
 }
 
 .album-scroll {
-    -ms-overflow-style: none; /* Hides scrollbar on IE and Edge */
-    scrollbar-width: none; /* Hides scrollbar on Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 
 .album {
     display: inline-block;
-    text-align: center; /* Centers the title below the image */
-    margin: 0 10px; /* Adds spacing between album items */
+    text-align: center;
+    margin: 0 10px;
 }
 
 .album-title {
-    margin-top: 10px; /* Adds space between the image and the title */
-    font-size: 14px; /* Adjust font size for readability */
-    color: #333; /* Default text color */
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Heiti TC;
+    font-weight: lighter;
+    color: rgb(71, 71, 71);
 }
 
 .dark-mode .album-title {
-    color: #8a8a8a; /* Adjust text color for dark mode */
+    color: #8a8a8a;
 }
 
 
