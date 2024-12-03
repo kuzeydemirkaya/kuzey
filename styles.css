@@ -128,8 +128,8 @@ body {
 }
 
 .album-genre {
-    margin-top: 7px;
-    font-size: 12px;
+    margin-top: 5px;
+    font-size: 13px;
     font-family: Heiti TC;
     font-weight: lighter;
     color: gray;
@@ -182,6 +182,7 @@ body {
 
 .album-title {
     margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 15px;
     font-family: Heiti TC;
     font-weight: normal;
