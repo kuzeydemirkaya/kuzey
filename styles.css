@@ -67,6 +67,64 @@ body {
 
 }
 
+.album-scroll {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.album-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.album-container a {
+    text-decoration: none;
+}
+
+.album-container img {
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.album-container img:hover {
+    transform: scale(1.1);
+}
+
+.album-scroll::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+    pointer-events: none; /* Makes sure the fade doesn't block scroll interaction */
+}
+
+.dark-mode .album-scroll::after {
+    background: linear-gradient(to left, #0F0F0F, rgba(15, 15, 15, 0));
+}
+
+.dark-mode .album-container img {
+    border-color: #333;
+}
+
+.album-scroll::-webkit-scrollbar {
+    display: none; /* Hides scrollbar on Webkit browsers */
+}
+
+.album-scroll {
+    -ms-overflow-style: none; /* Hides scrollbar on IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar on Firefox */
+}
+
+
 @media only screen and (max-width: 600px) {
     body {
         margin: 0;
