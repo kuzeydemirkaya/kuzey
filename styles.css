@@ -146,7 +146,9 @@ body {
 .dark-mode .album-title {
     color: #8a8a8a;
 }
-
+.dark-mode .album-genre {
+    color: rgb(97, 97, 97);
+}
 
 @media only screen and (max-width: 600px) {
     body {
