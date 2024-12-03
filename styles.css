@@ -3,28 +3,12 @@
         background-color: #0F0F0F;
         color: #8a8a8a;
     }
-
-    .album-scroll::before {
-        background: linear-gradient(to right, #0F0F0F, rgba(15, 15, 15, 0));
-    }
-
-    .album-scroll::after {
-        background: linear-gradient(to left, #0F0F0F, rgba(15, 15, 15, 0));
-    }
 }
 
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;
         color: #333333;
-    }
-
-    .album-scroll::before {
-        background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
-    }
-
-    .album-scroll::after {
-        background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
     }
 }
 
@@ -135,35 +119,6 @@ body {
     color: gray;
 }
 
-.album-scroll::before,
-.album-scroll::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    pointer-events: none; /* Allow scrolling even on gradient areas */
-    z-index: 1;
-}
-
-.album-scroll::before {
-    left: 0;
-    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
-}
-
-.album-scroll::after {
-    right: 0;
-    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
-}
-
-.dark-mode .album-scroll::before {
-    background: linear-gradient(to right, #0F0F0F, rgba(15, 15, 15, 0));
-}
-
-.dark-mode .album-scroll::after {
-    background: linear-gradient(to left, #0F0F0F, rgba(15, 15, 15, 0));
-}
-
 .album-scroll::-webkit-scrollbar {
     display: none; /* Hide the scrollbar */
 }
@@ -172,7 +127,6 @@ body {
     -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
     scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
-
 
 .album {
     display: inline-block;
