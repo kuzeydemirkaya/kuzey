@@ -89,11 +89,12 @@ body {
 .album-container img {
     height: 150px;
     border-radius: 0px;
-    transition: transform 0.1s;
+    transition: transform 0.2s;
+    border-radius: 8px;
 }
 
 .album-container img:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .album-scroll::after {
