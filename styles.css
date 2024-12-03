@@ -112,9 +112,9 @@ body {
 }
 
 .album-genre {
-    margin-top: 5px;
+    margin-top: 0px;
     font-size: 13px;
-    /* font-family: Heiti TC; */
+    font-family: Gujarati MT;
     font-weight: lighter;
     color: gray;
 }
@@ -138,7 +138,7 @@ body {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 17px;
-    /* font-family: Heiti TC; */
+    font-family: Gujarati MT;
     font-weight: normal;
     color: rgb(71, 71, 71);
 }
